@@ -1,0 +1,11 @@
+n=int(raw_input().strip())
+for i in range(n):
+    sz=int(raw_input().strip())
+    arr=map(int, raw_input().strip().split())
+    max=arr[0]
+    count=1
+    for item in arr[1:]:
+        if max<=item:
+            max=item
+            count=count+1
+    print count
